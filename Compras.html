@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Loja Touro Sentado</title>
+    <link rel="stylesheet" type="text/css" href="estilocompras.css">
+    <link href='https://fonts.googleapis.com/css?family=Stoke' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+
+</head>
+
+<body>
+    <header>
+
+        <div>
+            <img class="imgLogo" src="TouroSentadoLogoPq.png">
+
+
+            <address class="ender"> Av. Cabeza de Vaca, 1559 <br> Cel: (21) 98765-4321 <br><a href="mailto:contato@tsent.com.br">contato@tsent.com.br</a></address>
+        </div>
+
+    </header>
+    <br> <br> <br> <br> <br>
+
+    <nav>
+        <div>
+            <ul>
+                <li><a href="Apresentação.html">Apresentação</a></li><br/>
+                <li><a href="Mesas.html">Mesas</a></li><br/>
+                <li><a href="Cadeiras.html">Cadeiras</a></li><br/>
+                <li><a href="Compras.html">Compras</a></li><br/>
+                <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+            </ul>
+        </div>
+    </nav>
+
+    <section>
+        <form method="POST">
+            <fieldset class="fsForm">
+                <legend> Dados de Identificação&nbsp;</legend>
+                <br/><label for="nome" class="lab90">Nome: </label>
+                <input type="text" class="ent270Form" id="nome" name="TxtNome" />
+                <label for="cpf" class="lab70segCol">Cpf: </label>
+                <input type="text" class="ent120Form" id="cpf" name="TxtCpf" /><br/>
+                <br/><label for="tel" class="lab90">Telefone: </label>
+                <input type="text" class="ent120Form" id="tel" name="TxtTelefone" />
+                <label for="email" class="lab70segCol">Email: </label>
+                <input type="email" name="TxtEmail" id="email" class="ent270Form" /><br/>
+                <br/><label for="ender" class="lab90">Endereço: </label>
+                <input type="text" class="ent500Form" id="ender" name="TxtEnder" /><br/>
+            </fieldset>
+            <fieldset class="fsResEsq">
+                    <legend> Mesas&nbsp;</legend>
+                    <br/>Mesas: <select size="1" name="LstMesas" class="entDir">
+                        <option selected>---</option>
+                        <optgroup label="Diretor">
+                            <option>Alfamob Sigma</option>
+                            <option>Alfa Painel S49M136</option>
+                        </optgroup>    
+                        <optgroup label="Reunião">
+                            <option>Alfamob Corp. semi-oval</option>
+                        </optgroup>
+                    </select><br/>
+                    <br/>Cadeiras: <select size="1" name="LstCadeiras" class="entDir">
+                        <option selected>---</option>
+                        <optgroup label="Secretária">
+                            <option>Veneza 658 Fixa Couro</option>
+                            <option>Turim Gir. Couro</option>
+                            <option>Matriz Exp. Gir. Tecido</option>
+                        </optgroup>
+                        <optgroup label="Presidente">
+                            <option>Firenze 560 Couro</option>
+                            <option>Ipanema Prime Couro</option>
+                        </optgroup>
+                        
+                    </select><br/>
+                    <br/>Selecionados:
+                    <input type="button" value="remover" class="entDir" /><br/>
+                    <br/><textarea name="LstSelecionados" class="lstSel">
+                    </textarea><br/>
+                    <br/>Valor: <input readonly type="text" name="TxtValor" class="ent80Dir" />
+                    <br/><br/>
+                </fieldset>
+                <fieldset class="fsResDir">
+                    <legend> Forma de Pagamento&nbsp;</legend>
+                    <input type="radio" name="RadFormaPag" value="v" id="vis" checked />
+                    <label for="car">Cartão Visa</label><br/>
+                    <input type="radio" name="RadFormaPag" value="m" id="mas" />
+                    <label for="din">Cartão Mastercard</label><br/>
+                    <input type="radio" name="RadFormaPag" value="b" id="bol" />
+                    <label for="din">Boleto Bancário</label>
+                    <p class="parcelas">Parcelamento sem juros:
+                        <select size="1" name="LstParcelas" class="entDir">
+                            <option selected>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                        </select></p>                
+                    <fieldset class="fsCartao">
+                        <legend> Dados do Cartão&nbsp;</legend>
+                        <label for="num" class="lab90">Número: </label>
+                        <input type=text class="ent120Form" id="num" name="TxtNumero" /><br/>
+                        <label for="val" class="lab90">Validade: </label>
+                        <input type="text" class="ent20Form" id="val" name="TxtValMes" /> /
+                        <input type="text" class="ent40Form" name="TxtValAno" /><br/>
+                    
+                    </fieldset>
+            </fieldset>
+            
+            <p class="entDir">
+                <br> <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <input type="submit" value="Enviar" name="BtnEnviar">
+                <input type="reset" value="Limpar" name="BtnLimpar">
+            </p>
+        </form>
+    </section>
+
+</body>
+
+</html>

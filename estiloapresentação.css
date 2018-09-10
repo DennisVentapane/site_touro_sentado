@@ -1,0 +1,72 @@
+/*
+*Estilo da página em geral
+*/
+
+body{
+    background-color: #99CCCC; 
+    color:#883322; 
+    font-size: 16px; 
+    font-family: Stoke, Verdana, Liberation; 
+}
+a:link{text-decoration: none;
+    color:#883322;}
+a:visited{text-decoration: none;
+    color: #552211;}
+
+ul{
+    line-height: 200%;
+    list-style-type: square;
+}
+
+/* 
+*Estilo do Nav
+*/
+
+nav ul{
+    color: #883322;
+    line-height: 230%;
+    margin-top: 40px;
+}
+
+/*
+* Estilo do posicionamento das seções
+*/
+header { display:block;
+    margin-bottom: 1px; }
+nav { display:block;
+    width: 170px;
+    float: left;
+    margin-right: 10px;
+    font-weight: bolder;
+    font-family: Stoke, Verdana, Liberation; }
+section { display:block;
+    width: 77%;
+    float: right; }
+
+/*
+*Estilo do header
+*/
+
+address.ender{
+    text-align: right ;
+    font-size: 15px;
+    line-height: 140%;
+    float: right;
+}
+img.imgLogo{
+    border-bottom-color: #883322;
+    border-bottom: solid;
+    border-bottom-width: 3px;
+    margin-bottom: 6px;
+    padding-bottom: 15px;
+}
+
+/*
+*Estilo da seção apresentação da página
+*/
+
+div.apres{
+    text-align: center;
+    font-size: 18px;
+}
+
